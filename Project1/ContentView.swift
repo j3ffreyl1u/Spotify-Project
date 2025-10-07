@@ -16,8 +16,6 @@ struct ContentView: View {
                                 endPoint: .bottomTrailing
             )
             VStack {
-//                Spacer()
-//                    .frame(height: 80)
                 HStack{
                     Image(systemName: "chevron.down")
                         .foregroundStyle(.white)
@@ -32,13 +30,10 @@ struct ContentView: View {
                         .padding()
                 }
                 .padding(.vertical, 60)
-//                Spacer()
                 Image("Image")
                     .resizable()
                     .frame(width: 350, height: 350)
                     .padding(.bottom)
-//                Spacer()
-//                    .frame(height: 50)
                 HStack{
                     VStack(alignment: .leading) {
                         Text("Handlebars")
@@ -61,12 +56,10 @@ struct ContentView: View {
                 }
                 
                 .padding(.top, 40)
-//                .border(Color.white, width: 1)
-                
                 Slider(value: .constant(45), in: 0...100)
                     .frame(width: 370, height: 30)
                     .accentColor(.white)
-//                    .border(Color.white, width: 1)
+
                 HStack{
                     Text("0:11")
                         .foregroundStyle(.gray)
@@ -79,31 +72,24 @@ struct ContentView: View {
                         .padding(.horizontal, 15)
                 }
                 HStack(spacing: 40) {
-//                    Spacer()
                     Image(systemName: "shuffle")
                         .foregroundStyle(.green)
                         .font(.system(size: 25))
                         .padding(.leading)
-//                    Spacer()
                     Image(systemName: "backward.end.fill")
                         .foregroundStyle(.white)
                         .font(.system(size: 35))
-//                    Spacer()
                     Image(systemName: "pause.circle.fill")
                         .foregroundStyle(.white)
                         .font(.system(size: 55))
-//                    Spacer()
                     Image(systemName: "forward.end.fill")
                         .foregroundStyle(.white)
                         .font(.system(size: 35))
-//                    Spacer()
                     Image(systemName: "repeat")
                         .foregroundStyle(.green)
                         .font(.system(size: 25))
                         .padding(.trailing)
-//                    Spacer()
                 }
-//                .padding(.horizontal)
                 
                 HStack(alignment: .firstTextBaseline){
                     Image(systemName: "airplayaudio")
